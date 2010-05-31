@@ -172,7 +172,7 @@ template contact_content => sub {
 
 template home_content => sub {
     h1 { 'jarsonmar.org' }
-    p { 'Hi!' }
+    img { attr { src => 'img/chani.jpg' } }
 };
 
 template about_content => sub {
