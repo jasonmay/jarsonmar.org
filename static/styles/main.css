@@ -18,6 +18,15 @@ a:hover {
     text-decoration: underline;
 }
 
+.container h1 {
+    background-color: #eef;
+    border: solid 4px #333;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    padding: 4px 12px;
+}
+
 .container {
     margin-left: 12em;
 }
@@ -26,7 +35,7 @@ a:hover {
     float: left;
     background-color: #7cbcfa;
     width: 10em;
-    border: solid 6px #333;
+    border: solid 4px #333;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
@@ -36,9 +45,8 @@ a:hover {
     padding: 8px;
 }
 
-.innerhead:hover {
-    background-color: 
-    font-weight: bold;
+.innerseg:hover {
+    background-color: #aaccff;
     padding: 8px;
 }
 

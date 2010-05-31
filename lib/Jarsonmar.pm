@@ -48,7 +48,10 @@ foreach my $section (keys %Sections) {
                 attr { class => 'outer' }
                 div {
                     attr { class => 'innerhead' }
-                    $Sections{home}->[0]
+                    a {
+                        attr { href => $Sections{home}->[1] }
+                        $Sections{home}->[0]
+                    }
                 };
 
                 for (@Sections) {
@@ -87,7 +90,13 @@ template projects_content => sub {
 };
 
 template contact_content => sub {
-    p { 'TODO' }
+    h1 { "Contact Information" }
+    img {
+        attr { src => 'img/email.png' }
+    }
+    p {
+        q[That's all I gotta say about that!]
+    }
 };
 
 template home_content => sub {
@@ -96,7 +105,7 @@ template home_content => sub {
 };
 
 template about_content => sub {
-    h1 { 'About Me' }
+    h1 { 'About Jason' }
     p {
         q[
             My name is Jason May.
