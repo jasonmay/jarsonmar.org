@@ -25,6 +25,16 @@ BEGIN {
             head {
                 title { 'jarsonmar.org' }
             }
+            script {
+                attr {
+                    src => 'http://code.jquery.com/jquery-1.4.2.min.js',
+                }
+            }
+            script {
+                attr {
+                    src => 'js/main.js',
+                }
+            }
             link {
                 attr {
                     rel   => 'stylesheet',
@@ -39,7 +49,6 @@ BEGIN {
         };
     };
 }
-
 
 foreach my $section (keys %Sections) {
     template $section => sub {
