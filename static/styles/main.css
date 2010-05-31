@@ -1,0 +1,48 @@
+body {
+    font-family: helvetica,sans-serif;
+    font-size: 80%;
+}
+
+a:link {
+    color: #006;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #00b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00b;
+    text-decoration: underline;
+}
+
+.container {
+    margin-left: 12em;
+}
+
+.outer {
+    float: left;
+    background-color: #7cbcfa;
+    width: 10em;
+    border: solid 6px #333;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+.innerhead {
+    font-weight: bold;
+    padding: 8px;
+}
+
+.innerhead:hover {
+    background-color: 
+    font-weight: bold;
+    padding: 8px;
+}
+
+.innerseg {
+    border-top: solid 4px #333;
+    padding: 8px;
+}
