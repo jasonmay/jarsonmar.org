@@ -82,20 +82,57 @@ foreach my $section (keys %Sections) {
 }
 
 template links_content => sub {
-    p { 'TODO' }
+    my $list_link = sub {
+        my ($label, $link) = @_;
+        li {
+            a {
+                attr {
+                    href => $link
+                }
+                $label
+            }
+        }
+    };
+
+    h1 { "Links" }
+    p { 'You can find me on many other sites:' }
+    ul {
+        $list_link->('My Blog', 'http://jarsonmar.blogspot.com/'),
+        $list_link->('GitHub', 'http://github.com/jasonmay'),
+        $list_link->('Twitter', 'http://twitter.com/jasonmay'),
+        $list_link->('Flickr', 'http://flickr.com/photos/jasonmay'),
+        $list_link->('Facebook', 'http://facebook.com/jarsonmar'),
+        $list_link->('Last.FM', 'http://last.fm/user/Jarsonmar'),
+    }
 };
 
 template projects_content => sub {
-    p { 'TODO' }
+    h1 { "Projects" }
+    h2 {
+        'AberMUD'
+    }
+    p { 'Lorem Ipsum' }
+    h2 {
+        'Dataninja'
+    }
+    p { 'Lorem Ipsum' }
 };
 
 template contact_content => sub {
     h1 { "Contact Information" }
-    img {
-        attr { src => 'img/email.png' }
+    p {
+        outs 'You can contact me here: ';
+        img {
+            attr { src => 'img/email.png' }
+        }
     }
     p {
-        q[That's all I gotta say about that!]
+        q[
+            I have a cell phone by which you can
+            contact me, as well. Drop me an e-mail
+            and I can give you that information if
+            you wish to have it.
+        ]
     }
 };
 
