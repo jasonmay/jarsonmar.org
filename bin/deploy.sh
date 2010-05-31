@@ -4,5 +4,4 @@ then
     exit 1
 fi
 rsync -avcC 'static/' "$1/"
-perl -Ilib bin/build.pl
 rsync -avcC 'site/' "$1/"
