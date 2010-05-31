@@ -133,7 +133,8 @@ template projects_content => sub {
                 '(source)'
             }
         }
-        img { attr { src => 'img/abermud.png' } }
+        img { attr { src => 'img/abermud.png' } } br {}
+        img { attr { src => 'img/abermud-web.png' } } br {}
     }
     hr {}
     div {
