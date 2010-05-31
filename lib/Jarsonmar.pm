@@ -180,13 +180,16 @@ template about_content => sub {
     p {
         q[
             My name is Jason May.
-            I work at Silverback Network as
-            a Perl programmer.
+            I work at Silverback Network
+            as a Perl programmer.
         ]
     }
     h2 { 'Interests' }
-    p {
-        'Etc.'
+    ul {
+        li { 'Coding' }
+        li { 'IRC' }
+        li { 'Tennis' }
+        li { 'Perfecting my config files' }
     }
 };
 
