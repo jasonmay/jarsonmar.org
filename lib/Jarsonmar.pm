@@ -24,23 +24,23 @@ BEGIN {
         html {
             head {
                 title { 'jarsonmar.org' }
-            }
-            script {
-                attr {
-                    src => 'http://code.jquery.com/jquery-1.4.2.min.js',
+                script {
+                    attr {
+                        src => 'http://code.jquery.com/jquery-1.4.2.min.js',
+                    }
                 }
-            }
-            script {
-                attr {
-                    src => 'js/main.js',
+                script {
+                    attr {
+                        src => 'js/main.js',
+                    }
                 }
-            }
-            link {
-                attr {
-                    rel   => 'stylesheet',
-                    media => 'screen',
-                    type  => 'text/css',
-                    href  => $stylesheet,
+                link {
+                    attr {
+                        rel   => 'stylesheet',
+                        media => 'screen',
+                        type  => 'text/css',
+                        href  => $stylesheet,
+                    }
                 }
             }
             body {
