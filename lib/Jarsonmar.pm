@@ -121,14 +121,35 @@ template links_content => sub {
 
 template projects_content => sub {
     h1 { "Projects" }
-    h2 {
-        'AberMUD'
+    div {
+        attr { class => 'project_container' }
+        h2 {
+            attr { style => q[padding-bottom: 0] }
+            'AberMUD'
+        }
+        p {
+            a {
+                attr { href => 'http://github.com/jasonmay/abermud' }
+                '(source)'
+            }
+        }
+        img { attr { src => 'img/abermud.png' } }
     }
-    p { 'Lorem Ipsum' }
-    h2 {
-        'Dataninja'
+    hr {}
+    div {
+        attr { class => 'project_container' }
+        h2 {
+            attr { style => q[padding-bottom: 0] }
+            'Dataninja'
+        }
+        p {
+            a {
+                attr { href => 'http://github.com/jasonmay/abermud' }
+                '(source)'
+            }
+        }
+        img { attr { src => 'img/readable.png' } }
     }
-    p { 'Lorem Ipsum' }
 };
 
 template contact_content => sub {
