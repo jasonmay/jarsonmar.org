@@ -63,21 +63,25 @@ foreach my $section (keys %Sections) {
                     }
                 };
 
-                for (@Sections) {
-                    next if $_ eq 'home';
-                    div {
-                        attr { class => 'innerseg' };
-                        if ($_ eq $section) {
-                            $Sections{$_}->[0]
-                        }
-                        else {
-                            a {
-                                attr { href => $Sections{$_}->[1] }
+                ul {
+                    attr { class => 'nav' };
+                    for (@Sections) {
+                        next if $_ eq 'home';
+                        li {
+                            attr { class => 'innerseg', id => "nav_$_" };
+                            if ($_ eq $section) {
                                 $Sections{$_}->[0]
+                            }
+                            else {
+                                a {
+                                    attr { href => $Sections{$_}->[1] }
+                                    $Sections{$_}->[0]
+                                }
                             }
                         }
                     }
                 }
+                div { attr { class => 'innerfoot' }; outs_raw q[&nbsp;]; }
             }
             div {
                 attr { class => "container" }
